@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cia1tsdnl4vsx"]
+
+[ext_resource type="Script" path="res://scripts/Model.gd" id="1_dhxi1"]
+
+[node name="Tile" type="Node3D"]
+
+[node name="Model" type="Node3D" parent="."]
+script = ExtResource("1_dhxi1")
+model_id = "tile_hex_forest_detail"
+default_animation = "idle"
