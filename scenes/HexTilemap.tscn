@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://7nadwguuqbr1"]
+
+[ext_resource type="Script" path="res://scripts/HexTilemap.gd" id="1_r0vdo"]
+
+[node name="HexTilemap" type="Node3D"]
+script = ExtResource("1_r0vdo")

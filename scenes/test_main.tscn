@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cf5wrts1nc31k"]
+[gd_scene load_steps=6 format=3 uid="uid://cf5wrts1nc31k"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_4ek6n"]
 [ext_resource type="Script" path="res://scripts/kosro/sun.gd" id="2_0a0sg"]
-[ext_resource type="Script" path="res://scripts/Tile.gd" id="4_l6ill"]
+[ext_resource type="Script" path="res://scripts/HexTilemap.gd" id="4_2t1sp"]
 [ext_resource type="PackedScene" uid="uid://b5ow87oj5306e" path="res://scenes/unit.tscn" id="4_vc0mo"]
+[ext_resource type="Script" path="res://scripts/MapGeneratorNode.gd" id="5_rnf1o"]
 
 [node name="Test" type="Node3D"]
 script = ExtResource("1_4ek6n")
@@ -22,8 +23,8 @@ script = ExtResource("2_0a0sg")
 rotation_speed = 50.0
 
 [node name="Unit" parent="." instance=ExtResource("4_vc0mo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167975, 1, -0.154307)
-unit_type = "unit_cow"
+transform = Transform3D(0.985698, 0, 0.168524, 0, 1, 0, -0.168524, 0, 0.985698, 0.322753, 1, -0.154307)
+unit_type = "unit_fox"
 
 [node name="Unit2" parent="." instance=ExtResource("4_vc0mo")]
 transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, -0.123324, 1, -0.172401)
@@ -33,6 +34,11 @@ unit_type = "unit_bull"
 transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, 0.0261194, 1, 0.264706)
 unit_type = "unit_horse"
 
-[node name="Tile" type="Node3D" parent="."]
-script = ExtResource("4_l6ill")
-tile_type = "tile_grass"
+[node name="HexTilemap" type="Node3D" parent="."]
+script = ExtResource("4_2t1sp")
+
+[node name="MapGeneratorNode" type="Node" parent="HexTilemap"]
+script = ExtResource("5_rnf1o")
+last_generation_stats = "Generated 37 tiles (radius 3)
+Tile pool: [\"tile_grass\", \"tile_sand\", \"tile_water\"]
+Hex size: 1.14"
