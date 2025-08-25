@@ -13,22 +13,18 @@ class_name MapGeneratorNode
 const HEX_SIZE = 1.14
 
 @export_group("Generation Controls")
-@export var generate_map: bool = false: set = _generate_map
+@export var editor_generate_map: bool = false: set = _generate_map
 @export var clear_map: bool = false: set = _clear_map
-
-@export_group("Generation Info")
-@export var last_generation_stats: String = "No map generated yet"
 
 var _tilemap: HexTilemap
 
 func _ready():
-	if Engine.is_editor_hint():
-		# Find parent HexTilemap
-		var parent = get_parent()
-		if parent is HexTilemap:
-			_tilemap = parent
-		else:
-			push_warning("MapGeneratorNode: Parent is not a HexTilemap")
+	# Find parent HexTilemap (works both in editor and runtime)
+	var parent = get_parent()
+	if parent is HexTilemap:
+		_tilemap = parent
+	else:
+		push_warning("MapGeneratorNode: Parent is not a HexTilemap")
 
 func _set_map_size(value: int):
 	map_size = max(1, value)
@@ -43,9 +39,12 @@ func _set_tile_pool(value: Array[String]):
 
 func _generate_map(value: bool):
 	if Engine.is_editor_hint() and value:
-		generate_map = false # Reset button
+		editor_generate_map = false # Reset button
 		_perform_generation()
 		notify_property_list_changed()
+    
+func generate_map():
+	_perform_generation()
 
 func _clear_map(value: bool):
 	if Engine.is_editor_hint() and value:
@@ -54,14 +53,17 @@ func _clear_map(value: bool):
 		notify_property_list_changed()
 
 func _perform_generation():
+	print("MapGeneratorNode: Starting generation...")
+	print("MapGeneratorNode: _tilemap = ", _tilemap)
+	print("MapGeneratorNode: tile_pool = ", tile_pool)
+	print("MapGeneratorNode: map_size = ", map_size)
+	
 	if not _tilemap:
 		push_error("MapGeneratorNode: No HexTilemap parent found")
-		last_generation_stats = "ERROR: No HexTilemap parent"
 		return
 	
 	if tile_pool.is_empty():
 		push_error("MapGeneratorNode: Tile pool is empty")
-		last_generation_stats = "ERROR: Empty tile pool"
 		return
 	
 	print("MapGeneratorNode: Generating map with size=", map_size, " hex_size=", HEX_SIZE, " tiles=", tile_pool)
@@ -72,28 +74,20 @@ func _perform_generation():
 	# Generate the map
 	var stats = MapGenerator.generate_map(map_size, tile_pool, _tilemap, HEX_SIZE)
 	
+	print("MapGeneratorNode: Generation stats = ", stats)
+	
 	if "error" in stats:
-		last_generation_stats = "ERROR: " + stats.error
 		push_error("MapGeneratorNode: Generation failed: " + stats.error)
 	else:
-		var stats_text = "Generated %d tiles (radius %d)\nTile pool: %s\nHex size: %.2f" % [
-			stats.tiles_created,
-			stats.radius,
-			str(tile_pool),
-			HEX_SIZE
-		]
-		last_generation_stats = stats_text
 		print("MapGeneratorNode: Generation successful - ", stats.tiles_created, " tiles created")
 
 func _perform_clear():
 	if not _tilemap:
 		push_error("MapGeneratorNode: No HexTilemap parent found")
-		last_generation_stats = "ERROR: No HexTilemap parent"
 		return
 	
 	print("MapGeneratorNode: Clearing map")
 	_tilemap.clear_tiles()
-	last_generation_stats = "Map cleared"
 
 # Custom property list to make the interface cleaner
 func _get_property_list():

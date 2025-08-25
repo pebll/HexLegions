@@ -37,8 +37,5 @@ unit_type = "unit_horse"
 [node name="HexTilemap" type="Node3D" parent="."]
 script = ExtResource("4_2t1sp")
 
-[node name="MapGeneratorNode" type="Node" parent="HexTilemap"]
+[node name="MapGenerator" type="Node" parent="HexTilemap"]
 script = ExtResource("5_rnf1o")
-last_generation_stats = "Generated 37 tiles (radius 3)
-Tile pool: [\"tile_grass\", \"tile_sand\", \"tile_water\"]
-Hex size: 1.14"

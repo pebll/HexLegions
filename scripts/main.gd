@@ -11,12 +11,22 @@ func _ready():
 		if unit is Unit:
 			print("Unit: ", unit.name, " - Type: ", unit.unit_type)
 	
-	# Example: Dynamically create a new unit
-	# Uncomment the lines below to test dynamic unit creation
-	# var new_unit = Unit.create_unit("unit_wolf", self)
-	# if new_unit:
-	#     new_unit.global_position = Vector3(2, 1, 2)
-	#     print("Created new wolf unit at position: ", new_unit.global_position)
+	# Test tilemap
+	var tilemap = get_node("HexTilemap")
+	print("Tilemap: ", tilemap)
+
+	# Test map generator
+	var map_generator = get_node("HexTilemap/MapGenerator")
+	print("Map generator: ", map_generator)
+
+	# Generate map (deferred to ensure all nodes are ready)
+	print("Generating map...")
+	call_deferred("_generate_map_deferred", map_generator)
+
+func _generate_map_deferred(map_generator):
+	print("Deferred map generation starting...")
+	map_generator.generate_map()
+
 
 func _process(_delta):
 	if Input.is_action_pressed("exit"):

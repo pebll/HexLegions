@@ -5,9 +5,9 @@
 
 [node name="Unit" type="Node3D"]
 script = ExtResource("1_2rrsy")
-unit_type = "unit_alpaca"
+unit_type = "unit_stag"
 
 [node name="Model" type="Node3D" parent="."]
 script = ExtResource("1_gentf")
-model_id = "model_unit_alpaca"
+model_id = "model_unit_stag"
 default_animation = "walk"
