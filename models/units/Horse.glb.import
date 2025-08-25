@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dr3cuvbsrtmnc"
-path="res://.godot/imported/Fox.glb-912d7f702aa57560adcf72ad26491aea.scn"
+uid="uid://ngqia2xjeu20"
+path="res://.godot/imported/Horse.glb-2864e82d9051d870f254e5737bb97af0.scn"
 
 [deps]
 
-source_file="res://models/Fox.glb"
-dest_files=["res://.godot/imported/Fox.glb-912d7f702aa57560adcf72ad26491aea.scn"]
+source_file="res://models/units/Horse.glb"
+dest_files=["res://.godot/imported/Horse.glb-2864e82d9051d870f254e5737bb97af0.scn"]
 
 [params]
 

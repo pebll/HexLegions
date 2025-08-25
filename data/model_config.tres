@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="ModelConfigResource" load_steps=11 format=3 uid="uid://dis5uxeebabnj"]
+[gd_resource type="Resource" script_class="ModelConfigResource" load_steps=26 format=3 uid="uid://dis5uxeebabnj"]
 
 [ext_resource type="Script" path="res://scripts/ModelConfigResource.gd" id="1_model_config"]
 [ext_resource type="Script" path="res://scripts/ModelData.gd" id="1_model_data"]
 
+; ======= UNIT MODELS =======
+
 [sub_resource type="Resource" id="Resource_fox"]
 script = ExtResource("1_model_data")
 model_id = "model_fox"
-model_path = "res://models/Fox.glb"
+model_path = "res://models/units/Fox.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -19,7 +21,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_stag"]
 script = ExtResource("1_model_data")
 model_id = "model_stag"
-model_path = "res://models/Stag.glb"
+model_path = "res://models/units/Stag.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -32,7 +34,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_alpaca"]
 script = ExtResource("1_model_data")
 model_id = "model_alpaca"
-model_path = "res://models/Alpaca.glb"
+model_path = "res://models/units/Alpaca.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -45,7 +47,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_wolf"]
 script = ExtResource("1_model_data")
 model_id = "model_wolf"
-model_path = "res://models/Wolf.glb"
+model_path = "res://models/units/Wolf.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -58,7 +60,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_white_horse"]
 script = ExtResource("1_model_data")
 model_id = "model_white_horse"
-model_path = "res://models/White Horse.glb"
+model_path = "res://models/units/White Horse.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -71,7 +73,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_shiba_inu"]
 script = ExtResource("1_model_data")
 model_id = "model_shiba_inu"
-model_path = "res://models/Shiba Inu.glb"
+model_path = "res://models/units/Shiba Inu.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -84,7 +86,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_husky"]
 script = ExtResource("1_model_data")
 model_id = "model_husky"
-model_path = "res://models/Husky.glb"
+model_path = "res://models/units/Husky.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -97,7 +99,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_horse"]
 script = ExtResource("1_model_data")
 model_id = "model_horse"
-model_path = "res://models/Horse.glb"
+model_path = "res://models/units/Horse.glb"
 scale_factor = 0.1
 animated = true
 animations = {
@@ -107,6 +109,156 @@ animations = {
 "walk": "Walk"
 }
 
+[sub_resource type="Resource" id="Resource_donkey"]
+script = ExtResource("1_model_data")
+model_id = "model_donkey"
+model_path = "res://models/units/Donkey.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_deer"]
+script = ExtResource("1_model_data")
+model_id = "model_deer"
+model_path = "res://models/units/Deer.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_cow"]
+script = ExtResource("1_model_data")
+model_id = "model_cow"
+model_path = "res://models/units/Cow.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_bull"]
+script = ExtResource("1_model_data")
+model_id = "model_bull"
+model_path = "res://models/units/Bull.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+; ======= TILE MODELS =======
+
+[sub_resource type="Resource" id="Resource_hex_forest"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_forest"
+model_path = "res://models/tiles/hex_forest.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_forest_detail"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_forest_detail"
+model_path = "res://models/tiles/hex_forest_detail.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_forest_road_a"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_forest_road_a"
+model_path = "res://models/tiles/hex_forest_roadA.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_forest_transition_a"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_forest_transition_a"
+model_path = "res://models/tiles/hex_forest_transitionA.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_rock"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_rock"
+model_path = "res://models/tiles/hex_rock.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_rock_detail"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_rock_detail"
+model_path = "res://models/tiles/hex_rock_detail.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_rock_road_a"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_rock_road_a"
+model_path = "res://models/tiles/hex_rock_roadA.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_sand"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_sand"
+model_path = "res://models/tiles/hex_sand.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_sand_detail"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_sand_detail"
+model_path = "res://models/tiles/hex_sand_detail.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_sand_road_a"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_sand_road_a"
+model_path = "res://models/tiles/hex_sand_roadA.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_water"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_water"
+model_path = "res://models/tiles/hex_water.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
+[sub_resource type="Resource" id="Resource_hex_water_detail"]
+script = ExtResource("1_model_data")
+model_id = "tile_hex_water_detail"
+model_path = "res://models/tiles/hex_water_detail.gltf.glb"
+scale_factor = 1.0
+animated = false
+animations = {}
+
 [resource]
 script = ExtResource("1_model_config")
-models = Array[ExtResource("1_model_data")]([SubResource("Resource_fox"), SubResource("Resource_stag"), SubResource("Resource_alpaca"), SubResource("Resource_wolf"), SubResource("Resource_white_horse"), SubResource("Resource_shiba_inu"), SubResource("Resource_husky"), SubResource("Resource_horse")])
+models = Array[ExtResource("1_model_data")]([SubResource("Resource_fox"), SubResource("Resource_stag"), SubResource("Resource_alpaca"), SubResource("Resource_wolf"), SubResource("Resource_white_horse"), SubResource("Resource_shiba_inu"), SubResource("Resource_husky"), SubResource("Resource_horse"), SubResource("Resource_donkey"), SubResource("Resource_deer"), SubResource("Resource_cow"), SubResource("Resource_bull"), SubResource("Resource_hex_forest"), SubResource("Resource_hex_forest_detail"), SubResource("Resource_hex_forest_road_a"), SubResource("Resource_hex_forest_transition_a"), SubResource("Resource_hex_rock"), SubResource("Resource_hex_rock_detail"), SubResource("Resource_hex_rock_road_a"), SubResource("Resource_hex_sand"), SubResource("Resource_hex_sand_detail"), SubResource("Resource_hex_sand_road_a"), SubResource("Resource_hex_water"), SubResource("Resource_hex_water_detail")])

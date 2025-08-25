@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cdj3uyydhwjla"
-path="res://.godot/imported/Deer.glb-898b16d746719bd1f187ef7deb1db0ad.scn"
+uid="uid://dvsa2bm02pswc"
+path="res://.godot/imported/Donkey.glb-d7b5f3f2f6c2e02fc560ad93d2e26e6b.scn"
 
 [deps]
 
-source_file="res://models/Deer.glb"
-dest_files=["res://.godot/imported/Deer.glb-898b16d746719bd1f187ef7deb1db0ad.scn"]
+source_file="res://models/units/Donkey.glb"
+dest_files=["res://.godot/imported/Donkey.glb-d7b5f3f2f6c2e02fc560ad93d2e26e6b.scn"]
 
 [params]
 

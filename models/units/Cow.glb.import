@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b8b0jb4rohkt3"
-path="res://.godot/imported/Bull.glb-4282a633cd33fe6496d318d8f04c472d.scn"
+uid="uid://doag5gt7awkwq"
+path="res://.godot/imported/Cow.glb-a7f506d4947e05f7844988ba163d7ffd.scn"
 
 [deps]
 
-source_file="res://models/Bull.glb"
-dest_files=["res://.godot/imported/Bull.glb-4282a633cd33fe6496d318d8f04c472d.scn"]
+source_file="res://models/units/Cow.glb"
+dest_files=["res://.godot/imported/Cow.glb-a7f506d4947e05f7844988ba163d7ffd.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://hflyb34mr8rf"
-path="res://.godot/imported/Alpaca.glb-228af9dbd8ee3c0672372ddf7df2c428.scn"
+path="res://.godot/imported/Alpaca.glb-ffc1e5d569ef84af2274b0240c636e91.scn"
 
 [deps]
 
-source_file="res://models/Alpaca.glb"
-dest_files=["res://.godot/imported/Alpaca.glb-228af9dbd8ee3c0672372ddf7df2c428.scn"]
+source_file="res://models/units/Alpaca.glb"
+dest_files=["res://.godot/imported/Alpaca.glb-ffc1e5d569ef84af2274b0240c636e91.scn"]
 
 [params]
 

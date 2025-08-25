@@ -13,6 +13,7 @@ script = ExtResource("1_4ek6n")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.432839, 0.674097, -0.598534, 0, 0.663953, 0.747774, 0.901471, -0.323666, 0.287385, -1.577, 2.696, 0.733)
 projection = 1
+current = true
 fov = 64.6
 size = 2.343
 
@@ -24,13 +25,12 @@ rotation_speed = 50.0
 
 [node name="Unit" parent="." instance=ExtResource("4_vc0mo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167975, 1, -0.154307)
-unit_type = "unit_fox"
+unit_type = "unit_cow"
 
-[node name="Unit2" parent="." node_paths=PackedStringArray("model") instance=ExtResource("4_vc0mo")]
+[node name="Unit2" parent="." instance=ExtResource("4_vc0mo")]
 transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, -0.123324, 1, -0.172401)
-model = NodePath("../Unit/Model")
+unit_type = "unit_bull"
 
-[node name="Unit3" parent="." node_paths=PackedStringArray("model") instance=ExtResource("4_vc0mo")]
+[node name="Unit3" parent="." instance=ExtResource("4_vc0mo")]
 transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, 0.0261194, 1, 0.264706)
-model = NodePath("../Unit/Model")
-unit_type = "unit_fox"
+unit_type = "unit_horse"

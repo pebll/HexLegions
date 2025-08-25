@@ -2,16 +2,30 @@
 extends Node3D
 class_name Unit
 
-var unit_type: String = "unit_fox": set = set_unit_type
+var unit_type: String = "": set = set_unit_type
 @export var unit_config: UnitConfigResource = preload("res://data/unit_config.tres")
 
 var current_unit_data: UnitData = null
 
-@export var model: Model = null
+var model: Model = null
 
 func _ready():
 	add_to_group("units")
+	# Find the Model child node
+	model = _find_model_child()
+	
+	# Initialize unit data if not already set
+	if not current_unit_data and unit_type != "":
+		current_unit_data = unit_config.get_unit_data(unit_type)
 	_update_children()
+
+func _find_model_child() -> Model:
+	# Look for a direct child that is a Model
+	for child in get_children():
+		if child is Model:
+			return child
+	print("Unit: No Model child found")
+	return null
 
 func set_unit_type(new_type: String):
 	if new_type == unit_type:
@@ -32,6 +46,16 @@ func set_unit_type(new_type: String):
 
 func _update_children():
 	print("Unit: Updating children")
+	if not model:
+		print("Unit: Model reference is null")
+		return
+	if not current_unit_data:
+		print("Unit: Current unit data is null")
+		return
+	if not current_unit_data.model_id:
+		print("Unit: Model ID is empty")
+		return
+	
 	model.set_model_id(current_unit_data.model_id)
 
 

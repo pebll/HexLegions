@@ -4,5 +4,5 @@
 
 [node name="Model" type="Node3D"]
 script = ExtResource("1_tqeao")
-model_id = "model_white_horse"
+model_id = "model_hex_forest"
 default_animation = "idle_alt"

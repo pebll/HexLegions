@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmody2vlj5lvc"
-path="res://.godot/imported/Stag.glb-0edab8986c9736b508c65803a5f59c28.scn"
+path="res://.godot/imported/Stag.glb-bfcabf6d3f62100909d7a5c3e7a22f51.scn"
 
 [deps]
 
-source_file="res://models/Stag.glb"
-dest_files=["res://.godot/imported/Stag.glb-0edab8986c9736b508c65803a5f59c28.scn"]
+source_file="res://models/units/Stag.glb"
+dest_files=["res://.godot/imported/Stag.glb-bfcabf6d3f62100909d7a5c3e7a22f51.scn"]
 
 [params]
 

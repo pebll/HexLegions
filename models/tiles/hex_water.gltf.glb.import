@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dbew7jkasn4wp"
-path="res://.godot/imported/Shiba Inu.glb-6f594e13c4fc1196ebeeb040ebce85b5.scn"
+uid="uid://5wi4q0driukn"
+path="res://.godot/imported/hex_water.gltf.glb-3789d2a6abf678e400eedd1113b0db0e.scn"
 
 [deps]
 
-source_file="res://models/Shiba Inu.glb"
-dest_files=["res://.godot/imported/Shiba Inu.glb-6f594e13c4fc1196ebeeb040ebce85b5.scn"]
+source_file="res://models/tiles/hex_water.gltf.glb"
+dest_files=["res://.godot/imported/hex_water.gltf.glb-3789d2a6abf678e400eedd1113b0db0e.scn"]
 
 [params]
 

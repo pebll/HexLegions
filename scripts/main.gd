@@ -10,6 +10,13 @@ func _ready():
 	for unit in units:
 		if unit is Unit:
 			print("Unit: ", unit.name, " - Type: ", unit.unit_type)
+	
+	# Example: Dynamically create a new unit
+	# Uncomment the lines below to test dynamic unit creation
+	# var new_unit = Unit.create_unit("unit_wolf", self)
+	# if new_unit:
+	#     new_unit.global_position = Vector3(2, 1, 2)
+	#     print("Created new wolf unit at position: ", new_unit.global_position)
 
 func _process(_delta):
 	if Input.is_action_pressed("exit"):

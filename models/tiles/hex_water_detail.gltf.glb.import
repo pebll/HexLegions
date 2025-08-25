@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://doag5gt7awkwq"
-path="res://.godot/imported/Cow.glb-8bc3e117f4ba89c7b35248a200005e0b.scn"
+uid="uid://db0iu04o3n01i"
+path="res://.godot/imported/hex_water_detail.gltf.glb-e0f482ff33a8319bac589e3ee3ade31a.scn"
 
 [deps]
 
-source_file="res://models/Cow.glb"
-dest_files=["res://.godot/imported/Cow.glb-8bc3e117f4ba89c7b35248a200005e0b.scn"]
+source_file="res://models/tiles/hex_water_detail.gltf.glb"
+dest_files=["res://.godot/imported/hex_water_detail.gltf.glb-e0f482ff33a8319bac589e3ee3ade31a.scn"]
 
 [params]
 

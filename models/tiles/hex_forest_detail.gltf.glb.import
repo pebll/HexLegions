@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dvsa2bm02pswc"
-path="res://.godot/imported/Donkey.glb-be538966622504ece5074f8447eae60a.scn"
+uid="uid://b7hwfjgw24xmg"
+path="res://.godot/imported/hex_forest_detail.gltf.glb-ab0db520095120cfb43719a70acf6e85.scn"
 
 [deps]
 
-source_file="res://models/Donkey.glb"
-dest_files=["res://.godot/imported/Donkey.glb-be538966622504ece5074f8447eae60a.scn"]
+source_file="res://models/tiles/hex_forest_detail.gltf.glb"
+dest_files=["res://.godot/imported/hex_forest_detail.gltf.glb-ab0db520095120cfb43719a70acf6e85.scn"]
 
 [params]
 

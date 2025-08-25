@@ -19,6 +19,10 @@ func set_model_id(new_id: String):
 	if new_id == model_id:
 		return
 	
+	if not new_id or new_id == "":
+		print("Model: Invalid model ID provided")
+		return
+	
 	model_id = new_id
 	_update_model()
 	notify_property_list_changed()
@@ -31,7 +35,11 @@ func _set_default_animation(new_animation: String):
 func _update_model():
 	print("Model: Updating model")
 	if not model_config:
-		print("No model config provided")
+		print("Model: No model config provided")
+		return
+	
+	if not model_id or model_id == "":
+		print("Model: No model ID set")
 		return
 	
 	# Try to get model data safely

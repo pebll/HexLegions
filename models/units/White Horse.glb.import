@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ngqia2xjeu20"
-path="res://.godot/imported/Horse.glb-4b49ef48d671fbd505a04e4d3c01b823.scn"
+uid="uid://dac3ogwyujnyi"
+path="res://.godot/imported/White Horse.glb-b455c1acd4377a26f455b3616eff1110.scn"
 
 [deps]
 
-source_file="res://models/Horse.glb"
-dest_files=["res://.godot/imported/Horse.glb-4b49ef48d671fbd505a04e4d3c01b823.scn"]
+source_file="res://models/units/White Horse.glb"
+dest_files=["res://.godot/imported/White Horse.glb-b455c1acd4377a26f455b3616eff1110.scn"]
 
 [params]
 

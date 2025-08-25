@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dac3ogwyujnyi"
-path="res://.godot/imported/White Horse.glb-982572c58c7d41fbc75c6317a2ac416f.scn"
+uid="uid://dcomj5m12ed5p"
+path="res://.godot/imported/hex_sand_roadA.gltf.glb-fda82d2571e62f75ce6931b49165f815.scn"
 
 [deps]
 
-source_file="res://models/White Horse.glb"
-dest_files=["res://.godot/imported/White Horse.glb-982572c58c7d41fbc75c6317a2ac416f.scn"]
+source_file="res://models/tiles/hex_sand_roadA.gltf.glb"
+dest_files=["res://.godot/imported/hex_sand_roadA.gltf.glb-fda82d2571e62f75ce6931b49165f815.scn"]
 
 [params]
 

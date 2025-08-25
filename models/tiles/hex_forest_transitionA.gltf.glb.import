@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cmlfyvoo6tm5f"
-path="res://.godot/imported/Wolf.glb-0a3fa4e52a4acc098b794e2cc5fecd06.scn"
+uid="uid://dqr616dnjkho"
+path="res://.godot/imported/hex_forest_transitionA.gltf.glb-7115cc166c875e8484e7a139b9e590d6.scn"
 
 [deps]
 
-source_file="res://models/Wolf.glb"
-dest_files=["res://.godot/imported/Wolf.glb-0a3fa4e52a4acc098b794e2cc5fecd06.scn"]
+source_file="res://models/tiles/hex_forest_transitionA.gltf.glb"
+dest_files=["res://.godot/imported/hex_forest_transitionA.gltf.glb-7115cc166c875e8484e7a139b9e590d6.scn"]
 
 [params]
 
