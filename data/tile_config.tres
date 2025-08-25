@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="HexTileConfigResource" load_steps=6 format=3 uid="uid://c2036f8ax4g1p"]
+
+[ext_resource type="Script" path="res://scripts/TileConfigResource.gd" id="1_368l0"]
+[ext_resource type="Script" path="res://scripts/TileData.gd" id="2_pqwm5"]
+
+[sub_resource type="Resource" id="Resource_1c16t"]
+script = ExtResource("2_pqwm5")
+tile_id = "tile_grass"
+display_name = "Grass"
+model_id = "model_tile_forest_detail"
+is_walkable = true
+
+[sub_resource type="Resource" id="Resource_uis0e"]
+script = ExtResource("2_pqwm5")
+tile_id = "tile_sand"
+display_name = "Sand"
+model_id = "model_tile_sand_detail"
+is_walkable = true
+
+[sub_resource type="Resource" id="Resource_ce8wl"]
+script = ExtResource("2_pqwm5")
+tile_id = "tile_water"
+display_name = "Water"
+model_id = "model_tile_water_detail"
+is_walkable = false
+
+[resource]
+script = ExtResource("1_368l0")
+tiles = Array[ExtResource("2_pqwm5")]([SubResource("Resource_1c16t"), SubResource("Resource_uis0e"), SubResource("Resource_ce8wl")])

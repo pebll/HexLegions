@@ -3,9 +3,9 @@ extends Node3D
 class_name Tile
 
 var tile_type: String = "": set = set_tile_type
-@export var tile_config: TileConfigResource = preload("res://data/tile_config.tres")
+@export var tile_config: HexTileConfigResource = preload("res://data/tile_config.tres")
 
-var current_tile_data: TileData = null
+var current_tile_data: HexTileData = null
 
 var model: Model = null
 
@@ -32,7 +32,7 @@ func set_tile_type(new_type: String):
 		return
 	
 	if not tile_config.tile_exists(new_type):
-		print("Unit: Unit type does not exist: ", new_type)
+		print("Tile: Tile type does not exist: ", new_type)
 		return
 	
 	tile_type = new_type

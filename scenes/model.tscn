@@ -4,5 +4,5 @@
 
 [node name="Model" type="Node3D"]
 script = ExtResource("1_tqeao")
-model_id = "tile_hex_rock_transition_a"
+model_id = "model_tile_rock"
 default_animation = "idle_alt"
