@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://3gnkchtttdlw"]
+
+[ext_resource type="Script" path="res://scripts/Model.gd" id="1_tqeao"]
+
+[node name="Model" type="Node3D"]
+script = ExtResource("1_tqeao")
+model_id = "model_white_horse"
+default_animation = "idle_alt"

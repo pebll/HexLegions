@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="UnitConfigResource" load_steps=15 format=3 uid="uid://cbyk2g4fgiejt"]
+
+[ext_resource type="Script" path="res://scripts/UnitConfigResource.gd" id="1_cfg"]
+[ext_resource type="Script" path="res://scripts/UnitData.gd" id="2_unit"]
+
+[sub_resource type="Resource" id="unit_fox_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_fox"
+display_name = "Fox"
+model_id = "model_fox"
+default_attack = 2
+default_health = 6
+movement_speed = 5.0
+description = "Swift and cunning fox"
+
+[sub_resource type="Resource" id="unit_stag_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_stag"
+display_name = "Stag"
+model_id = "model_stag"
+default_attack = 4
+default_health = 10
+movement_speed = 3.0
+description = "Noble stag with powerful antlers"
+
+[sub_resource type="Resource" id="unit_alpaca_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_alpaca"
+display_name = "Alpaca"
+model_id = "model_alpaca"
+default_attack = 1
+default_health = 8
+movement_speed = 4.0
+description = "Gentle alpaca with soft wool"
+
+[sub_resource type="Resource" id="unit_wolf_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_wolf"
+display_name = "Wolf"
+model_id = "model_wolf"
+default_attack = 5
+default_health = 8
+movement_speed = 6.0
+description = "Fierce wolf with pack mentality"
+
+[sub_resource type="Resource" id="unit_white_horse_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_white_horse"
+display_name = "White Horse"
+model_id = "model_white_horse"
+default_attack = 3
+default_health = 12
+movement_speed = 7.0
+description = "Majestic white horse"
+
+[sub_resource type="Resource" id="unit_shiba_inu_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_shiba_inu"
+display_name = "Shiba Inu"
+model_id = "model_shiba_inu"
+default_attack = 2
+default_health = 5
+movement_speed = 5.5
+description = "Loyal and spirited Shiba Inu"
+
+[sub_resource type="Resource" id="unit_husky_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_husky"
+display_name = "Husky"
+model_id = "model_husky"
+default_attack = 3
+default_health = 7
+movement_speed = 6.5
+description = "Energetic and strong husky"
+
+[sub_resource type="Resource" id="unit_horse_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_horse"
+display_name = "Horse"
+model_id = "model_horse"
+default_attack = 3
+default_health = 12
+movement_speed = 7.0
+description = "Strong and reliable horse"
+
+[sub_resource type="Resource" id="unit_donkey_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_donkey"
+display_name = "Donkey"
+model_id = "model_donkey"
+default_attack = 2
+default_health = 10
+movement_speed = 4.0
+description = "Hardy and stubborn donkey"
+
+[sub_resource type="Resource" id="unit_deer_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_deer"
+display_name = "Deer"
+model_id = "model_deer"
+default_attack = 3
+default_health = 8
+movement_speed = 6.0
+description = "Graceful and agile deer"
+
+[sub_resource type="Resource" id="unit_cow_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_cow"
+display_name = "Cow"
+model_id = "model_cow"
+default_attack = 2
+default_health = 15
+movement_speed = 3.0
+description = "Strong and gentle cow"
+
+[sub_resource type="Resource" id="unit_bull_res"]
+script = ExtResource("2_unit")
+unit_id = "unit_bull"
+display_name = "Bull"
+model_id = "model_bull"
+default_attack = 6
+default_health = 18
+movement_speed = 4.0
+description = "Powerful and aggressive bull"
+
+[resource]
+script = ExtResource("1_cfg")
+units = Array[ExtResource("2_unit")]([SubResource("unit_fox_res"), SubResource("unit_stag_res"), SubResource("unit_alpaca_res"), SubResource("unit_wolf_res"), SubResource("unit_white_horse_res"), SubResource("unit_shiba_inu_res"), SubResource("unit_husky_res"), SubResource("unit_horse_res"), SubResource("unit_donkey_res"), SubResource("unit_deer_res"), SubResource("unit_cow_res"), SubResource("unit_bull_res")])

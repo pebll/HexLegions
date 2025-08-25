@@ -1,0 +1,32 @@
+[gd_resource type="MeshLibrary" load_steps=5 format=3 uid="uid://ck560kduqla43"]
+
+[ext_resource type="ArrayMesh" uid="uid://bm5pyiqn53cw0" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_rock.obj" id="1_aii06"]
+[ext_resource type="ArrayMesh" uid="uid://bino7aufh2enn" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_forest.obj" id="2_r6aau"]
+[ext_resource type="ArrayMesh" uid="uid://xin5aoy57nx" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_sand.obj" id="3_s5pig"]
+[ext_resource type="ArrayMesh" uid="uid://bwra50lh077ea" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_water.obj" id="4_bx4gg"]
+
+[resource]
+item/0/name = "dirt"
+item/0/mesh = ExtResource("1_aii06")
+item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/shapes = []
+item/0/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/0/navigation_layers = 1
+item/1/name = "grass"
+item/1/mesh = ExtResource("2_r6aau")
+item/1/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/shapes = []
+item/1/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/1/navigation_layers = 1
+item/2/name = "sand"
+item/2/mesh = ExtResource("3_s5pig")
+item/2/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/shapes = []
+item/2/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/2/navigation_layers = 1
+item/3/name = "water"
+item/3/mesh = ExtResource("4_bx4gg")
+item/3/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/shapes = []
+item/3/navigation_mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+item/3/navigation_layers = 1

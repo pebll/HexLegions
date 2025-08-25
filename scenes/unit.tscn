@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5ow87oj5306e"]
+
+[ext_resource type="Script" path="res://scripts/Unit.gd" id="1_2rrsy"]
+[ext_resource type="Script" path="res://scripts/Model.gd" id="1_gentf"]
+
+[node name="Unit" type="Node3D" node_paths=PackedStringArray("model")]
+script = ExtResource("1_2rrsy")
+model = NodePath("Model")
+unit_type = "unit_stag"
+
+[node name="Model" type="Node3D" parent="."]
+script = ExtResource("1_gentf")
+model_id = "model_stag"
+default_animation = "idle"

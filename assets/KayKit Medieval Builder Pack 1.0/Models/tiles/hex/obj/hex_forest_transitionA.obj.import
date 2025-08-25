@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vju7xp710fbk"
+path="res://.godot/imported/hex_forest_transitionA.obj-0ffba9e96205dd7113ae72fd0d66b429.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_forest_transitionA.obj-0ffba9e96205dd7113ae72fd0d66b429.mesh"]
+
+source_file="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_forest_transitionA.obj"
+dest_files=["res://.godot/imported/hex_forest_transitionA.obj-0ffba9e96205dd7113ae72fd0d66b429.mesh", "res://.godot/imported/hex_forest_transitionA.obj-0ffba9e96205dd7113ae72fd0d66b429.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

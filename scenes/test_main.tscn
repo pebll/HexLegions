@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://cf5wrts1nc31k"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_4ek6n"]
+[ext_resource type="PackedScene" uid="uid://paa71k6daywi" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest.gltf.glb" id="1_ipvsx"]
+[ext_resource type="Script" path="res://scripts/kosro/sun.gd" id="2_0a0sg"]
+[ext_resource type="PackedScene" uid="uid://b5ow87oj5306e" path="res://scenes/unit.tscn" id="4_vc0mo"]
+
+[node name="Test" type="Node3D"]
+script = ExtResource("1_4ek6n")
+
+[node name="base" parent="." instance=ExtResource("1_ipvsx")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.432839, 0.674097, -0.598534, 0, 0.663953, 0.747774, 0.901471, -0.323666, 0.287385, -1.577, 2.696, 0.733)
+projection = 1
+fov = 64.6
+size = 2.343
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.211452, 0.849006, -0.484227, -0.0717784, 0.507581, 0.858609, 0.974749, -0.146798, 0.168269, 5.02816, 16.438, 0.184047)
+shadow_enabled = true
+script = ExtResource("2_0a0sg")
+rotation_speed = 50.0
+
+[node name="Unit" parent="." instance=ExtResource("4_vc0mo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167975, 1, -0.154307)
+unit_type = "unit_fox"
+
+[node name="Unit2" parent="." node_paths=PackedStringArray("model") instance=ExtResource("4_vc0mo")]
+transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, -0.123324, 1, -0.172401)
+model = NodePath("../Unit/Model")
+
+[node name="Unit3" parent="." node_paths=PackedStringArray("model") instance=ExtResource("4_vc0mo")]
+transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, 0.0261194, 1, 0.264706)
+model = NodePath("../Unit/Model")
+unit_type = "unit_fox"

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="ModelConfigResource" load_steps=11 format=3 uid="uid://dis5uxeebabnj"]
+
+[ext_resource type="Script" path="res://scripts/ModelConfigResource.gd" id="1_model_config"]
+[ext_resource type="Script" path="res://scripts/ModelData.gd" id="1_model_data"]
+
+[sub_resource type="Resource" id="Resource_fox"]
+script = ExtResource("1_model_data")
+model_id = "model_fox"
+model_path = "res://models/Fox.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_stag"]
+script = ExtResource("1_model_data")
+model_id = "model_stag"
+model_path = "res://models/Stag.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_alpaca"]
+script = ExtResource("1_model_data")
+model_id = "model_alpaca"
+model_path = "res://models/Alpaca.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_wolf"]
+script = ExtResource("1_model_data")
+model_id = "model_wolf"
+model_path = "res://models/Wolf.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_white_horse"]
+script = ExtResource("1_model_data")
+model_id = "model_white_horse"
+model_path = "res://models/White Horse.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_shiba_inu"]
+script = ExtResource("1_model_data")
+model_id = "model_shiba_inu"
+model_path = "res://models/Shiba Inu.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_husky"]
+script = ExtResource("1_model_data")
+model_id = "model_husky"
+model_path = "res://models/Husky.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[sub_resource type="Resource" id="Resource_horse"]
+script = ExtResource("1_model_data")
+model_id = "model_horse"
+model_path = "res://models/Horse.glb"
+scale_factor = 0.1
+animated = true
+animations = {
+"attack": "Attack",
+"idle": "Idle",
+"idle_alt": "Idle_2",
+"walk": "Walk"
+}
+
+[resource]
+script = ExtResource("1_model_config")
+models = Array[ExtResource("1_model_data")]([SubResource("Resource_fox"), SubResource("Resource_stag"), SubResource("Resource_alpaca"), SubResource("Resource_wolf"), SubResource("Resource_white_horse"), SubResource("Resource_shiba_inu"), SubResource("Resource_husky"), SubResource("Resource_horse")])

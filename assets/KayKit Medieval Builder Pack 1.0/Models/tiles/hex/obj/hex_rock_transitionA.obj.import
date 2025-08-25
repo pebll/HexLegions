@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://byyd8ayewmb3w"
+path="res://.godot/imported/hex_rock_transitionA.obj-c7b337df5eb700405b0ba688ea16847f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hex_rock_transitionA.obj-c7b337df5eb700405b0ba688ea16847f.mesh"]
+
+source_file="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/obj/hex_rock_transitionA.obj"
+dest_files=["res://.godot/imported/hex_rock_transitionA.obj-c7b337df5eb700405b0ba688ea16847f.mesh", "res://.godot/imported/hex_rock_transitionA.obj-c7b337df5eb700405b0ba688ea16847f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
