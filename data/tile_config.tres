@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="HexTileConfigResource" load_steps=6 format=3 uid="uid://c2036f8ax4g1p"]
 
-[ext_resource type="Script" path="res://scripts/TileConfigResource.gd" id="1_368l0"]
-[ext_resource type="Script" path="res://scripts/TileData.gd" id="2_pqwm5"]
+[ext_resource type="Script" path="res://scripts/resources/TileConfigResource.gd" id="1_368l0"]
+[ext_resource type="Script" path="res://scripts/resources/TileData.gd" id="2_pqwm5"]
 
 [sub_resource type="Resource" id="Resource_1c16t"]
 script = ExtResource("2_pqwm5")

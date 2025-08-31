@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://da1xb1ujjk747"]
+
+[ext_resource type="Script" path="res://scripts/ForcePoint.gd" id="1_ip7s8"]
+[ext_resource type="PackedScene" uid="uid://cqxbwdtwl1f7k" path="res://scenes/ForcePoint.tscn" id="2_1xe2q"]
+
+[node name="Test" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.877583, -0.229849, 0.420735, 0, 0.877583, 0.479426, -0.479426, -0.420736, 0.770151, 1.68294, 1.9177, 3.0806)
+
+[node name="Center" type="Node3D" parent="."]
+script = ExtResource("1_ip7s8")
+effect_range = 10.0
+force = -0.27
+is_static = true
+
+[node name="Obstacle" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.15723, -0.431801, 0.0168072)
+script = ExtResource("1_ip7s8")
+is_static = true
+
+[node name="ForcePoint" parent="." instance=ExtResource("2_1xe2q")]
+
+[node name="ForcePoint2" parent="." instance=ExtResource("2_1xe2q")]
+
+[node name="ForcePoint3" parent="." instance=ExtResource("2_1xe2q")]

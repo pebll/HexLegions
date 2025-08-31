@@ -10,8 +10,11 @@ var _previous_direction: Vector3 = Vector3.ZERO
 func _process(_delta):
 	if orbit:
 		global_rotate(axis, rotation_speed * _delta * 0.01)
-	var direction: Vector3 = -global_transform.basis.z
+	var direction: Vector3 = - global_transform.basis.z
 	if _previous_direction != direction:
 		RenderingServer.global_shader_parameter_set("sun_direction", direction)
 		_previous_direction = direction
-	DebugDraw3D.draw_arrow_line(global_transform.origin, global_transform.origin + direction * 10, Color(1, 1, 0, 1))
+	
+	# Only draw debug arrows in editor mode
+	if Engine.is_editor_hint():
+		DebugDraw3D.draw_arrow_line(global_transform.origin, global_transform.origin + direction * 10, Color(1, 1, 0, 1))

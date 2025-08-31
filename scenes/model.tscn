@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://3gnkchtttdlw"]
+[gd_scene load_steps=3 format=3 uid="uid://3gnkchtttdlw"]
 
 [ext_resource type="Script" path="res://scripts/Model.gd" id="1_tqeao"]
+[ext_resource type="Resource" uid="uid://dis5uxeebabnj" path="res://data/model_config.tres" id="2_ubmgi"]
 
 [node name="Model" type="Node3D"]
 script = ExtResource("1_tqeao")
+model_config = ExtResource("2_ubmgi")
 model_id = "model_tile_rock"
 default_animation = "idle_alt"

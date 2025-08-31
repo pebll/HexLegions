@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ModelConfigResource" load_steps=52 format=3 uid="uid://dis5uxeebabnj"]
 
-[ext_resource type="Script" path="res://scripts/ModelConfigResource.gd" id="1_model_config"]
-[ext_resource type="Script" path="res://scripts/ModelData.gd" id="1_model_data"]
+[ext_resource type="Script" path="res://scripts/resources/ModelConfigResource.gd" id="1_model_config"]
+[ext_resource type="Script" path="res://scripts/resources/ModelData.gd" id="1_model_data"]
 
 [sub_resource type="Resource" id="Resource_fox"]
 script = ExtResource("1_model_data")
@@ -162,7 +162,7 @@ animations = {
 [sub_resource type="Resource" id="Resource_hex_forest"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest.gltf.glb"
+model_path = "res://models/tiles/hex_forest.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -170,7 +170,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_forest_detail"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest_detail"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest_detail.gltf.glb"
+model_path = "res://models/tiles/hex_forest_detail.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -178,7 +178,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_forest_road_a"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest_road_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest_roadA.gltf.glb"
+model_path = "res://models/tiles/hex_forest_roadA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -186,7 +186,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_forest_transition_a"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest_transition_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest_transitionA.gltf.glb"
+model_path = "res://models/tiles/hex_forest_transitionA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -194,7 +194,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock.gltf.glb"
+model_path = "res://models/tiles/hex_rock.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -202,7 +202,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock_detail"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock_detail"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock_detail.gltf.glb"
+model_path = "res://models/tiles/hex_rock_detail.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -210,7 +210,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock_road_a"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock_road_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock_roadA.gltf.glb"
+model_path = "res://models/tiles/hex_rock_roadA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -218,7 +218,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand.gltf.glb"
+model_path = "res://models/tiles/hex_sand.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -226,7 +226,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_detail"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_detail"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_detail.gltf.glb"
+model_path = "res://models/tiles/hex_sand_detail.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -234,7 +234,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_road_a"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadA.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -242,7 +242,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_water"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_water"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_water.gltf.glb"
+model_path = "res://models/tiles/hex_water.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -250,7 +250,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_water_detail"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_water_detail"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_water_detail.gltf.glb"
+model_path = "res://models/tiles/hex_water_detail.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -258,7 +258,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadB.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -266,7 +266,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadC"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_c"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadC.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadC.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -274,7 +274,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadD"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_d"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadD.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadD.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -282,7 +282,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadE"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_e"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadE.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadE.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -290,7 +290,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadF"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_f"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadF.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadF.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -298,7 +298,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadG"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_g"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadG.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadG.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -306,7 +306,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadH"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_h"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadH.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadH.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -314,7 +314,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadI"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_i"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadI.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadI.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -322,7 +322,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadJ"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_j"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadJ.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadJ.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -330,7 +330,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadK"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_k"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadK.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadK.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -338,7 +338,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadL"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_l"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadL.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadL.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -346,7 +346,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_roadM"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_road_m"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_roadM.gltf.glb"
+model_path = "res://models/tiles/hex_sand_roadM.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -354,7 +354,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_transitionA"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_transition_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_transitionA.gltf.glb"
+model_path = "res://models/tiles/hex_sand_transitionA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -362,7 +362,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_transitionB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_transition_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_transitionB.gltf.glb"
+model_path = "res://models/tiles/hex_sand_transitionB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -370,7 +370,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_waterA"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_water_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_waterA.gltf.glb"
+model_path = "res://models/tiles/hex_sand_waterA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -378,7 +378,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_waterB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_water_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_waterB.gltf.glb"
+model_path = "res://models/tiles/hex_sand_waterB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -386,7 +386,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_waterC"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_water_c"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_waterC.gltf.glb"
+model_path = "res://models/tiles/hex_sand_waterC.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -394,7 +394,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_sand_waterD"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_sand_water_d"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand_waterD.gltf.glb"
+model_path = "res://models/tiles/hex_sand_waterD.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -402,7 +402,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock_roadB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock_road_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock_roadB.gltf.glb"
+model_path = "res://models/tiles/hex_rock_roadB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -410,7 +410,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock_roadC"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock_road_c"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock_roadC.gltf.glb"
+model_path = "res://models/tiles/hex_rock_roadC.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -418,7 +418,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock_transitionA"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock_transition_a"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock_transitionA.gltf.glb"
+model_path = "res://models/tiles/hex_rock_transitionA.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -426,7 +426,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_rock_transitionB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_rock_transition_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock_transitionB.gltf.glb"
+model_path = "res://models/tiles/hex_rock_transitionB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -434,7 +434,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_forest_roadB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest_road_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest_roadB.gltf.glb"
+model_path = "res://models/tiles/hex_forest_roadB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -442,7 +442,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_forest_roadC"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest_road_c"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest_roadC.gltf.glb"
+model_path = "res://models/tiles/hex_forest_roadC.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}
@@ -450,7 +450,7 @@ animations = {}
 [sub_resource type="Resource" id="Resource_hex_forest_transitionB"]
 script = ExtResource("1_model_data")
 model_id = "model_tile_forest_transition_b"
-model_path = "res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest_transitionB.gltf.glb"
+model_path = "res://models/tiles/hex_forest_transitionB.gltf.glb"
 scale_factor = 1.0
 animated = false
 animations = {}

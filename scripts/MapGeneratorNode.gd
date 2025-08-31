@@ -42,7 +42,7 @@ func _generate_map(value: bool):
 		editor_generate_map = false # Reset button
 		_perform_generation()
 		notify_property_list_changed()
-    
+	
 func generate_map():
 	_perform_generation()
 

@@ -9,5 +9,5 @@ tile_type = "tile_grass"
 
 [node name="Model" type="Node3D" parent="."]
 script = ExtResource("1_dhxi1")
-model_id = "model_tile_forest_detail"
+model_id = "model_tile_sand_road_a"
 default_animation = "idle"

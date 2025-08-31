@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqxbwdtwl1f7k"]
+
+[ext_resource type="Script" path="res://scripts/ForcePoint.gd" id="1_e0t5d"]
+
+[node name="ForcePoint" type="Node3D"]
+script = ExtResource("1_e0t5d")

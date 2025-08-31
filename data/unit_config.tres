@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="UnitConfigResource" load_steps=15 format=3 uid="uid://cbyk2g4fgiejt"]
 
-[ext_resource type="Script" path="res://scripts/UnitConfigResource.gd" id="1_cfg"]
-[ext_resource type="Script" path="res://scripts/UnitData.gd" id="2_unit"]
+[ext_resource type="Script" path="res://scripts/resources/UnitConfigResource.gd" id="1_cfg"]
+[ext_resource type="Script" path="res://scripts/resources/UnitData.gd" id="2_unit"]
 
 [sub_resource type="Resource" id="unit_fox_res"]
 script = ExtResource("2_unit")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://byv0qfl8uwfbl"]
+[gd_scene load_steps=42 format=3 uid="uid://byv0qfl8uwfbl"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_g6cit"]
 [ext_resource type="PackedScene" uid="uid://c7kjke7mmdjoa" path="res://scenes/world.tscn" id="2_1fo61"]
@@ -22,15 +22,9 @@
 [ext_resource type="PackedScene" uid="uid://du6cpohi7vpjl" path="res://assets/old/rocks/stone_tallJ.glb" id="20_vdb3e"]
 [ext_resource type="PackedScene" uid="uid://ccca7sdrxgt8h" path="res://assets/old/rocks/stone_tallF.glb" id="21_rmeoy"]
 [ext_resource type="PackedScene" uid="uid://y2gqy5c6c25n" path="res://assets/old/rocks/stone_tallH.glb" id="22_e0vyt"]
-[ext_resource type="PackedScene" uid="uid://paa71k6daywi" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_forest.gltf.glb" id="23_omed6"]
-[ext_resource type="PackedScene" uid="uid://d0trgu31ex8v4" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_rock.gltf.glb" id="24_n2a04"]
-[ext_resource type="PackedScene" uid="uid://bgfoslge33e3q" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_sand.gltf.glb" id="25_r7h1j"]
-[ext_resource type="PackedScene" uid="uid://crywjvym4khxb" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/tiles/hex/gltf/hex_water.gltf.glb" id="26_g22y6"]
-[ext_resource type="PackedScene" uid="uid://b0vgisd56jxwu" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/bridge.gltf.glb" id="27_4xaab"]
-[ext_resource type="PackedScene" uid="uid://bfhvtjymvyi0r" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_rocks_small.gltf.glb" id="28_ekori"]
-[ext_resource type="PackedScene" uid="uid://b3lho3q1fgu4l" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/detail_treeC.gltf.glb" id="29_6tlpa"]
-[ext_resource type="PackedScene" uid="uid://cefa0b4sc0nfu" path="res://assets/KayKit Medieval Builder Pack 1.0/Models/objects/gltf/watermill.gltf.glb" id="30_60ctq"]
-[ext_resource type="PackedScene" uid="uid://d4e3dhkthcj7y" path="res://Stag.tscn" id="31_v43h5"]
+[ext_resource type="Script" path="res://scripts/HexTilemap.gd" id="23_tr5k8"]
+[ext_resource type="Script" path="res://scripts/MapGeneratorNode.gd" id="24_ducpi"]
+[ext_resource type="PackedScene" uid="uid://b5ow87oj5306e" path="res://scenes/unit.tscn" id="25_dpej7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gt1vv"]
 sky_top_color = Color(0.101961, 0.0980392, 0.196078, 1)
@@ -211,7 +205,7 @@ texture = SubResource("ViewportTexture_2gejb")
 centered = false
 
 [node name="GodRays" type="MultiMeshInstance3D" parent="." node_paths=PackedStringArray("sun")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.9573, 0.647188, 18.3412)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.28332, 0.647188, 18.3412)
 multimesh = SubResource("MultiMesh_8irc7")
 script = ExtResource("17_c3mta")
 count = 3
@@ -219,11 +213,9 @@ depth = 40.0
 sun = NodePath("../Sun")
 
 [node name="OLD" type="Node3D" parent="."]
-visible = false
 
 [node name="Player" type="CharacterBody3D" parent="OLD" node_paths=PackedStringArray("camera") groups=["snap"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3661, 1.10317, 19.2672)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.968784, 2.22877, -2.59461)
 script = ExtResource("10_1vxge")
 camera = NodePath("../../SubViewport/CameraRig/Camera3D")
 
@@ -341,7 +333,7 @@ skeleton = NodePath("")
 shape = SubResource("ConcavePolygonShape3D_gygys")
 
 [node name="stone_smallTopB2" parent="OLD" instance=ExtResource("19_4t37e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9916, 0, 19.7982)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9916, -11.3068, 6.70397)
 
 [node name="stone_tallJ2" parent="OLD" instance=ExtResource("20_vdb3e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6842, 0, 21.9507)
@@ -352,83 +344,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5004, 0, 16.8533)
 [node name="stone_tallH2" parent="OLD" instance=ExtResource("22_e0vyt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9865, 0, 15.4044)
 
-[node name="Tilemap2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4251, 0, 17.3726)
+[node name="HexTilemap" type="Node3D" parent="."]
+script = ExtResource("23_tr5k8")
 
-[node name="hex_forest_gltf" parent="Tilemap2" instance=ExtResource("23_omed6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.4)
+[node name="MapGenerator" type="Node" parent="HexTilemap"]
+script = ExtResource("24_ducpi")
 
-[node name="hex_rock_gltf" parent="Tilemap2" instance=ExtResource("24_n2a04")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1.7)
+[node name="Unit" parent="." instance=ExtResource("25_dpej7")]
+transform = Transform3D(0.985698, 0, 0.168524, 0, 1, 0, -0.168524, 0, 0.985698, -0.853531, 1.00393, 1.80203)
 
-[node name="hex_sand_gltf" parent="Tilemap2" instance=ExtResource("25_r7h1j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.53674e-07, 0)
+[node name="Unit2" parent="." instance=ExtResource("25_dpej7")]
+transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, -1.29961, 1.00393, 1.78393)
 
-[node name="hex_water_gltf" parent="Tilemap2" instance=ExtResource("26_g22y6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -0.167777, 1.7)
-
-[node name="Tilemap2" type="Node3D" parent="Tilemap2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.89395, 0, 0)
-
-[node name="hex_forest_gltf" parent="Tilemap2/Tilemap2" instance=ExtResource("23_omed6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.4)
-
-[node name="hex_rock_gltf" parent="Tilemap2/Tilemap2" instance=ExtResource("24_n2a04")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1.7)
-
-[node name="hex_sand_gltf" parent="Tilemap2/Tilemap2" instance=ExtResource("25_r7h1j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.53674e-07, 0)
-
-[node name="hex_water_gltf" parent="Tilemap2/Tilemap2" instance=ExtResource("26_g22y6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1.7)
-
-[node name="Tilemap" type="Node3D" parent="Tilemap2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.96815, 0, 3.42058)
-
-[node name="hex_forest_gltf" parent="Tilemap2/Tilemap" instance=ExtResource("23_omed6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00670624, 0.0109267, 3.4185)
-
-[node name="hex_rock_gltf" parent="Tilemap2/Tilemap" instance=ExtResource("24_n2a04")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1.7)
-
-[node name="hex_sand_gltf" parent="Tilemap2/Tilemap" instance=ExtResource("25_r7h1j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00841451, 0)
-
-[node name="hex_water_gltf" parent="Tilemap2/Tilemap" instance=ExtResource("26_g22y6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1.7)
-
-[node name="Tilemap3" type="Node3D" parent="Tilemap2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9258, 0, 3.42058)
-
-[node name="hex_forest_gltf" parent="Tilemap2/Tilemap3" instance=ExtResource("23_omed6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.4)
-
-[node name="hex_rock_gltf" parent="Tilemap2/Tilemap3" instance=ExtResource("24_n2a04")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1.7)
-
-[node name="hex_sand_gltf" parent="Tilemap2/Tilemap3" instance=ExtResource("25_r7h1j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9.53674e-07, 0)
-
-[node name="hex_water_gltf" parent="Tilemap2/Tilemap3" instance=ExtResource("26_g22y6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -0.132576, 1.7)
-
-[node name="bridge_gltf" parent="Tilemap2" instance=ExtResource("27_4xaab")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.976866, 1.09385, 1.78006)
-
-[node name="detail_rocks_small_gltf" parent="Tilemap2" instance=ExtResource("28_ekori")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.738068, 0.959635, 4.87436)
-
-[node name="detail_treeC_gltf" parent="Tilemap2" instance=ExtResource("29_6tlpa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.486725, 0.940477, 3.37276)
-
-[node name="watermill_gltf" parent="Tilemap2" instance=ExtResource("30_60ctq")]
-transform = Transform3D(0.599359, 0, 0.80048, 0, 1, 0, -0.80048, 0, 0.599359, 1.41266, 0.958379, 4.4092)
-
-[node name="Stag" parent="." instance=ExtResource("31_v43h5")]
-transform = Transform3D(0.0991515, 0, 0.012999, 0, 0.1, 0, -0.012999, 0, 0.0991515, 18.8025, 1, 20.9466)
-
-[node name="Stag2" parent="." instance=ExtResource("31_v43h5")]
-transform = Transform3D(0.0903515, 0, -0.0428557, 0, 0.1, 0, 0.0428557, 0, 0.0903515, 18.1497, 0.999355, 20.8383)
+[node name="Unit3" parent="." instance=ExtResource("25_dpej7")]
+transform = Transform3D(0.979796, 0, -0.200001, 0, 1, 0, 0.200001, 0, 0.979796, -1.15016, 1.00393, 2.22104)
 
 [editable path="OLD/Player/fox"]
 [editable path="OLD/stone_largeC2"]
